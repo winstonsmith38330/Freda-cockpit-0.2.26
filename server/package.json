@@ -1,0 +1,28 @@
+{
+  "name": "freda-ops-cockpit-server",
+  "version": "0.2.26-browser-sync-fallback",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && find src -name '*.js' -maxdepth 5 -print0 | xargs -0 -n1 node --check",
+    "import:check": "node scripts/check-imports.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "adm-zip": "^0.5.16",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.6",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "turndown": "^7.2.0",
+    "xlsx": "^0.18.5",
+    "playwright": "^1.49.1"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "description": "Freda Ops Cockpit Beta 0.2.26 with Playwright browser fallback for reporting.site ECONNRESET/live POS sync"
+}

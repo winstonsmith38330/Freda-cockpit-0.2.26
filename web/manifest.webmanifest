@@ -1,0 +1,21 @@
+{
+  "name": "Freda Ops Cockpit Beta 0.2.14",
+  "short_name": "Freda Ops",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "background_color": "#f7f4fa",
+  "theme_color": "#e6007e",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "L.A. Donuts AI Operations Assistant Beta 0.2.14"
+}

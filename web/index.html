@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#e6007e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Freda Ops" />
+  <title>Freda Ops Cockpit · Beta 0.2.26</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="appShell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">L.A. Donuts · Beta 0.2.26</div>
+        <h1>Freda Ops Cockpit</h1>
+      </div>
+      <button id="installBtn" class="install-btn" hidden>Install</button>
+    </header>
+
+    <section class="role-strip">
+      <label for="roleSelect">Role</label>
+      <select id="roleSelect" aria-label="Role switcher">
+        <option>Freda / Owner</option>
+        <option>Nicolas / Ops</option>
+        <option>Store Manager</option>
+        <option>Staff</option>
+        <option>Admin</option>
+      </select>
+      <span id="syncStatus" class="sync-pill">Loading...</span>
+    </section>
+
+    <nav id="tabs" class="tabs" aria-label="Main sections"></nav>
+    <main id="screen" class="screen"><div class="empty">Loading Freda Ops Cockpit...</div></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
